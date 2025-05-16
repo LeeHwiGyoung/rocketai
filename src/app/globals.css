@@ -18,6 +18,14 @@
 
 @theme {
   --font-main : GapyeongHanseokbong-Regular;
+  --text-saju-xs : 0.475rem;
+  --text-saju-sm : 0.523rem;
+  --text-saju-lg : 1.569rem;
+  --color-saju-red : #C23030;
+  --color-saju-black : #2f2f2f;
+  --color-saju-green : #18868C;
+  --color-saju-background-white : #f9f9f9;
+  --color-saju-white : #ffffff;
 }
 
 :root {
