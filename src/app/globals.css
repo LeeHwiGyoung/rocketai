@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: GapyeongHanseokbong-Regular;
+  src: url('./fonts/GapyeongHanseokbong-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: GapyeongHanseokbong-Bold;
+  src: url('./fonts/GapyeongHanseokbong-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style : normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-main : GapyeongHanseokbong-Regular;
+}
 
 :root {
   --background: #ffffff;
