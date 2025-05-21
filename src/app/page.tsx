@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 import SajuChartTable from "@/components/SajuChartTable";
-=======
->>>>>>> de24256dab25bface78cebe2dd2401e4354da34e
 import Image from "next/image";
 
 export default function Home() {
