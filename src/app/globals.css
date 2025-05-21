@@ -26,7 +26,8 @@
   --color-saju-green : #18868C;
   --color-saju-background-white : #f9f9f9;
   --color-saju-white : #ffffff;
-}
+  --color-border-blue : #2B557E;
+ }
 
 :root {
   --background: #ffffff;
