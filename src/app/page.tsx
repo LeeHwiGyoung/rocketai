@@ -1,3 +1,4 @@
+import SajuChartTable from "@/components/SajuChartTable";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
           <p> 보기 쉽게 표로 정리했어요</p>
         </div>
         <Image src="/img_cut_3.png" alt="" width={448} height={513.76} />
+      </div>
+      <div className="px-3 mt-[-6.93%]">
+        <SajuChartTable/>
       </div>
     </main>
   );
