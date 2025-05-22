@@ -28,6 +28,8 @@
   --color-saju-white : #ffffff;
   --color-border-blue : #2B557E;
   --font-zen-antique : Zen Antique;
+  --breakpoint-first-comment-collapse-sm : 23.125rem;
+  --breakpoint-first-comment-collapes-xs : 20.125rem;
  }
 
 :root {
