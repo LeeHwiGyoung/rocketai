@@ -1,6 +1,6 @@
 @layer components {
    .table-header-col th {
-        @apply border-b border-r-[0.5px] border-r-[#9b9b9b] pt-[1.4%] pb-[4.49%] text-[1.3rem] w-[21.13%];
+        @apply border-b border-r border-r-[#9b9b9b] pt-[1.4%] pb-[4.49%] text-[1.3rem] w-[21.13%];
     }
     .table-header-col th:first-child {
         @apply w-[15.48%];
@@ -16,7 +16,7 @@
     }
     
     .table-body-col td {
-        @apply bg-[#ffffff] border-r-[0.5px] border-r-[#9b9b9b] border-b;
+        @apply bg-[#ffffff] border-r- border-r-[#9b9b9b] border-b;
     }
 
     .table-body-col td:last-child {
@@ -24,7 +24,7 @@
     }
 
     .table-body-col .celestialstems {
-        @apply border-b-[0.5px] border-b-[#96969b]; 
+        @apply border-b border-b-[#96969b]; 
     }
 
     .textItems {
