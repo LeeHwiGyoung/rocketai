@@ -150,6 +150,7 @@ const sajuData : SajuData = {
 }
 
 export default function SajuChartTable() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [user, setUser] = useState<User>({
     name : '김로켓',
     year : '1980',
