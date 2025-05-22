@@ -1,0 +1,31 @@
+@layer components {
+   .table-header-col th {
+        @apply border-b border-r-[0.5px] border-r-[#9b9b9b] pt-[1.4%] pb-[4.49%] text-[1.3rem];
+    }
+
+    /* 첫 번째와 마지막 th에만 적용되는 스타일 */
+    .table-header-col th:first-child,
+    .table-header-col th:last-child {
+        @apply border-[#000000] border-r border-b;
+    }
+
+    .table-body-col th {
+        @apply border-[#000000] border-r border-b pt-[2.62%] pb-[3.67%];
+    }
+    
+    .table-body-col td {
+        @apply bg-[#ffffff] border-r-[0.5px] border-r-[#9b9b9b] border-b;
+    }
+
+    .table-body-col td:last-child {
+        @apply border-r-1 border-r-[#000000];
+    }
+
+    .table-body-col .celestialstems {
+        @apply border-b-[0.5px] border-b-[#96969b]; 
+    }
+
+    .textItems {
+        @apply pt-[0.6%] pb-[2.38%];
+    }
+}
