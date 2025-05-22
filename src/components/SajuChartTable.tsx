@@ -187,7 +187,7 @@ export default function SajuChartTable() {
                     </td>
                   }
                   if(colItem.type === 'stamp'){
-                    return <td key={colIndex} className={`${rowIndex === 1 ? 'celestialstems' : ""} py-[1.8%]`}>
+                    return <td key={colIndex} className={`${rowIndex === 1 ? 'celestialstems' : ""} p-[1.8%]`}>
                       <div className='flex items-center justify-center'>
                         <SajuStamp fontColor={colItem.fontColor} backgroundColor={colItem.backgroundColor} border={colItem.border} hanjaText={colItem.hanjaText} koreanText={colItem.koreanText} detailHanjaText={colItem.detailHanjaText} />
                       </div>
