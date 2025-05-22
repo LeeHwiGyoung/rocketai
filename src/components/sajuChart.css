@@ -16,7 +16,7 @@
     }
     
     .table-body-col td {
-        @apply bg-[#ffffff] border-r- border-r-[#9b9b9b] border-b;
+        @apply bg-[#ffffff] border-r border-r-[#9b9b9b] border-b;
     }
 
     .table-body-col td:last-child {
