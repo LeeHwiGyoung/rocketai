@@ -16,11 +16,19 @@
   font-display: swap;
 }
 
+@layer utility {
+  .text-saju-stamp-korean {
+    font-size : clamp(0.371rem, 2vw, 0.475rem)
+  } 
+  .text-saju-stamp-kanji {
+    font-size : clamp(1.227rem, 6vw, 1.569rem)
+  }
+  .text-saju-stamp-hanja {
+    font-size : clamp(0.409rem, 1.8vw, 0.523rem)
+  }
+}
 @theme {
   --font-main : GapyeongHanseokbong-Regular;
-  --text-saju-xs : 0.475rem;
-  --text-saju-sm : 0.523rem;
-  --text-saju-lg : 1.569rem;
   --color-saju-red : #C23030;
   --color-saju-black : #2f2f2f;
   --color-saju-green : #18868C;
