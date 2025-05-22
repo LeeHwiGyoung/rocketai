@@ -1,8 +1,10 @@
 @layer components {
    .table-header-col th {
-        @apply border-b border-r-[0.5px] border-r-[#9b9b9b] pt-[1.4%] pb-[4.49%] text-[1.3rem];
+        @apply border-b border-r-[0.5px] border-r-[#9b9b9b] pt-[1.4%] pb-[4.49%] text-[1.3rem] w-[21.13%];
     }
-
+    .table-header-col th:first-child {
+        @apply w-[15.48%];
+    }
     /* 첫 번째와 마지막 th에만 적용되는 스타일 */
     .table-header-col th:first-child,
     .table-header-col th:last-child {
