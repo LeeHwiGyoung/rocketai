@@ -9,7 +9,7 @@ export default function SajuText({size ,hanjaText , koreanText}:SajuTextProps) {
   const sizeVariable = {
     small : {
         hanja : 'text-[0.61rem] font-zen-antique whitespace-nowrap',
-        korean : 'text-saju-xs font-main whitespace-nowrap',
+        korean : 'text-[0.475rem] font-main whitespace-nowrap',
     },
     medium :  {
         hanja : 'text-[0.92rem] font-zen-antique whitespace-nowrap font-bold',
