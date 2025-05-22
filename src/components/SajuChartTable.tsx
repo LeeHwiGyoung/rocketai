@@ -164,8 +164,8 @@ export default function SajuChartTable() {
       <div className='relative flex flex-col items-center border-x-2 border-border-blue mx-1.25 px-3
         before:absolute before:bg-[url("/left_layer.png")] before:w-[16.86%] before:aspect-56/38 before:bg-cover before:left-0 before:top-11.25 before:z-10
         after:absolute after:bg-[url("/right_layer.png")] after:w-[16.86%] after:aspect-56/38 after:bg-cover after:right-0  after:top-6.5 after:z-10 '>
-        <h2 className='mt-10'>{user.name}님의 사주</h2>
-        <p className='mt-3'>{user.year}년 {user.month}월{user.day}일 {user.birthTime}</p>
+        <h2 className='mt-10 text-[#424242]'>{user.name}님의 사주</h2>
+        <p className='mt-3 text-xl text-[#424242] font-bold'>{user.year}년 {user.month}월{user.day}일 {user.birthTime}</p>
         <table className='w-full border-collapse border-black mt-6.5 mb-8.25'>
           <thead>
             <tr className='table-header-col'>
@@ -177,17 +177,17 @@ export default function SajuChartTable() {
           <tbody>
             {sajuData.body.map((rowItem, rowIndex)=> {
               return <tr className='table-body-col' key={rowIndex}>
-                <th className={`${rowIndex === 1 && 'celestialstems'}`}>
+                <th className={`${rowIndex === 1 ? 'celestialstems' : ""}`}>
                   <SajuText size={'small'} hanjaText={rowItem.rowTitle.hanjaText} koreanText={rowItem.rowTitle.koreanText} />
                 </th>
                 {rowItem.columns.map((colItem , colIndex) => {
                   if(colItem.type === 'text') {
-                    return <td key={colIndex}>
+                    return <td key={colIndex} className='textItems'>
                       <SajuText size={'medium'} hanjaText={colItem.hanjaText} koreanText={colItem.koreanText}/> 
                     </td>
                   }
                   if(colItem.type === 'stamp'){
-                    return <td key={colIndex} className={`${rowIndex === 1 && 'celestialstems'}`}>
+                    return <td key={colIndex} className={`${rowIndex === 1 ? 'celestialstems' : ""} py-[1.8%]`}>
                       <div className='flex items-center justify-center'>
                         <SajuStamp fontColor={colItem.fontColor} backgroundColor={colItem.backgroundColor} border={colItem.border} hanjaText={colItem.hanjaText} koreanText={colItem.koreanText} detailHanjaText={colItem.detailHanjaText} />
                       </div>
@@ -196,7 +196,7 @@ export default function SajuChartTable() {
 
                   if(colItem.type === 'group'){
                     return (
-                      <td key={colIndex}>
+                      <td key={colIndex} className='textItems'>
                       {colItem.items.map((groupItem, index)=> {
                         return <SajuText key={index} size={'medium'} hanjaText={groupItem.hanjaText} koreanText={groupItem.koreanText}/>
                       })}    
